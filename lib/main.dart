@@ -24,7 +24,7 @@ class DicePage extends StatelessWidget {
           Expanded(
             flex: 1,
             child: FlatButton(
-              child: Image.asset('images/dice1.png'),
+              child: Image.asset('images/dice$leftDiceNumber.png'),
               onPressed: (){
                 print('Left button got pressed.');
               },
@@ -33,7 +33,7 @@ class DicePage extends StatelessWidget {
           Expanded(
             flex: 1,
             child: FlatButton(
-              child: Image.asset('images/dice6.png'),
+              child: Image.asset('images/dice$rightDiceNumber.png'),
               onPressed: (){
                 print('Right button got pressed.');
               },
@@ -43,4 +43,7 @@ class DicePage extends StatelessWidget {
       ),
     );
   }
+
+  var leftDiceNumber = 1;
+  var rightDiceNumber = 2;
 }
